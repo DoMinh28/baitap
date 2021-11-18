@@ -30,19 +30,33 @@ header {
 }
 .body {
   background-image: url(https://elanta.app/nazar/tastyc-demo/img/bg.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   height: 6500px;
   position: relative;
   margin: 0px;
+  /* display: flex; */
+  /* width: fit-content; */
+  /* overflow: hidden; */
 }
+/* .img img:first-child {
+  background-attachment: local;
+} */
 .img {
-  background-image: url(https://elanta.app/nazar/tastyc-demo/img/banners/banner-3.jpg);
+  position: relative;
+  top: 0;
+  left: 0;
   height: 800px;
+  width: 100%;
+  right: 0;
   background-size: cover;
   background-position: center;
+  /* overflow: hidden; */
+  /* transition: all 10s; */
+  /* opacity: 0; */
   /* margin-top: 300px; */
 }
+
 .overlay {
   background-color: rgba(4, 25, 29, 0.7);
   position: absolute;
@@ -1152,6 +1166,7 @@ nav .ul1 li:hover .a1::after {
   box-shadow: 0 5px 10px 0 rgb(26 47 51 / 11%);
   position: relative;
   border-radius: 7px;
+  overflow: hidden;
 }
 .padd {
   padding: 25px 20px;

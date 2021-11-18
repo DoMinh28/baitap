@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -187,7 +188,11 @@
       </div>
     </header>
    
-    <div class="img"></div>
+    <div class="img">
+      <img src="https://elanta.app/nazar/tastyc-demo/img/banners/banner-3.jpg" alt="" width="100%">
+      <!-- <img src="https://elanta.app/nazar/tastyc-demo/img/banners/banner-1.jpg" alt="" width="100%">
+      <img src="https://elanta.app/nazar/tastyc-demo/img/banners/banner-2.jpg" alt=""width="100%"> -->
+    </div>
     <div class="overlay"> 
       <div class="content">
       <div></div>
@@ -311,17 +316,19 @@
       </div>
     </div>
     <div class="content2">
-        <div class="left">
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" class="left">
           <div></div>
           <span>Mobile application</span>
           <h1>Download <br> our application</h1>
           <p class="pp">Quaerat debitis, vel, sapiente dicta sequi <br> labore porro pariatur harum expedita.</p>
           <button class="buttonn"><i class="fab fa-app-store"></i>Appstore</button>
           <button class="buttonn"><i class="fab fa-google-play"></i>Playmarket</button>
-        </div>
-        <div class="right">
-          <img src="https://elanta.app/nazar/tastyc-demo/img/phone.png" alt="ảnh" height="600px">
-        </div>
+</div>
+<div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" class="right">
+     <img src="https://elanta.app/nazar/tastyc-demo/img/phone.png" alt="ảnh" height="600px">
+</div>
     </div>
     <div class="content3">
       <div class="phanmot">
@@ -452,7 +459,7 @@
         </div>
       </div>
     </div>
-    <div class="content4">
+    <div data-aos="zoom-in" class="content4">
       <div class="headd">
         <img src="https://elanta.app/nazar/tastyc-demo/img/logo-sm-white.svg" alt="logo" width="130px">
         <div class="bonicon">
@@ -510,5 +517,10 @@
     </div>
   </div>
   </div>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
+ 
 </html>
